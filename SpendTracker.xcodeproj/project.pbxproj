@@ -14,6 +14,10 @@
 		D1718E4E2A9FE1BA00EAF828 /* SpendTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1718E4D2A9FE1BA00EAF828 /* SpendTrackerTests.swift */; };
 		D1718E582A9FE1BA00EAF828 /* SpendTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1718E572A9FE1BA00EAF828 /* SpendTrackerUITests.swift */; };
 		D1718E5A2A9FE1BA00EAF828 /* SpendTrackerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1718E592A9FE1BA00EAF828 /* SpendTrackerUITestsLaunchTests.swift */; };
+		D1718E672A9FE86700EAF828 /* CameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1718E662A9FE86700EAF828 /* CameraManager.swift */; };
+		D1718E692AA0D35400EAF828 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1718E682AA0D35400EAF828 /* MainView.swift */; };
+		D1718E6B2AA0EFEC00EAF828 /* ReceiptScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1718E6A2AA0EFEC00EAF828 /* ReceiptScannerView.swift */; };
+		D1718E6D2AA0EFFC00EAF828 /* ReceiptDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1718E6C2AA0EFFC00EAF828 /* ReceiptDataView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,11 @@
 		D1718E532A9FE1BA00EAF828 /* SpendTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpendTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1718E572A9FE1BA00EAF828 /* SpendTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpendTrackerUITests.swift; sourceTree = "<group>"; };
 		D1718E592A9FE1BA00EAF828 /* SpendTrackerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpendTrackerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D1718E662A9FE86700EAF828 /* CameraManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraManager.swift; sourceTree = "<group>"; };
+		D1718E682AA0D35400EAF828 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		D1718E6A2AA0EFEC00EAF828 /* ReceiptScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptScannerView.swift; sourceTree = "<group>"; };
+		D1718E6C2AA0EFFC00EAF828 /* ReceiptDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptDataView.swift; sourceTree = "<group>"; };
+		D1718E712AA1270C00EAF828 /* SpendTracker-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "SpendTracker-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +83,7 @@
 		D1718E302A9FE1B700EAF828 = {
 			isa = PBXGroup;
 			children = (
+				D1718E712AA1270C00EAF828 /* SpendTracker-Info.plist */,
 				D1718E3B2A9FE1B800EAF828 /* SpendTracker */,
 				D1718E4C2A9FE1BA00EAF828 /* SpendTrackerTests */,
 				D1718E562A9FE1BA00EAF828 /* SpendTrackerUITests */,
@@ -94,10 +104,11 @@
 		D1718E3B2A9FE1B800EAF828 /* SpendTracker */ = {
 			isa = PBXGroup;
 			children = (
+				D1718E702AA1264300EAF828 /* Tabs */,
+				D1718E6F2AA1263000EAF828 /* Pages */,
 				D1718E3C2A9FE1B800EAF828 /* SpendTrackerApp.swift */,
-				D1718E3E2A9FE1B800EAF828 /* ContentView.swift */,
-				D1718E402A9FE1B900EAF828 /* Assets.xcassets */,
 				D1718E422A9FE1B900EAF828 /* Preview Content */,
+				D1718E6E2AA125FD00EAF828 /* Model */,
 			);
 			path = SpendTracker;
 			sourceTree = "<group>";
@@ -105,6 +116,7 @@
 		D1718E422A9FE1B900EAF828 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				D1718E402A9FE1B900EAF828 /* Assets.xcassets */,
 				D1718E432A9FE1B900EAF828 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
@@ -125,6 +137,32 @@
 				D1718E592A9FE1BA00EAF828 /* SpendTrackerUITestsLaunchTests.swift */,
 			);
 			path = SpendTrackerUITests;
+			sourceTree = "<group>";
+		};
+		D1718E6E2AA125FD00EAF828 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D1718E662A9FE86700EAF828 /* CameraManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D1718E6F2AA1263000EAF828 /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				D1718E3E2A9FE1B800EAF828 /* ContentView.swift */,
+				D1718E682AA0D35400EAF828 /* MainView.swift */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+		D1718E702AA1264300EAF828 /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				D1718E6A2AA0EFEC00EAF828 /* ReceiptScannerView.swift */,
+				D1718E6C2AA0EFFC00EAF828 /* ReceiptDataView.swift */,
+			);
+			path = Tabs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +295,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1718E6B2AA0EFEC00EAF828 /* ReceiptScannerView.swift in Sources */,
 				D1718E3F2A9FE1B800EAF828 /* ContentView.swift in Sources */,
+				D1718E672A9FE86700EAF828 /* CameraManager.swift in Sources */,
+				D1718E692AA0D35400EAF828 /* MainView.swift in Sources */,
+				D1718E6D2AA0EFFC00EAF828 /* ReceiptDataView.swift in Sources */,
 				D1718E3D2A9FE1B800EAF828 /* SpendTrackerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -420,6 +462,8 @@
 				DEVELOPMENT_TEAM = C7T8QPEC86;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SpendTracker-Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "This App would like to use your camera to scan recipts.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -449,6 +493,8 @@
 				DEVELOPMENT_TEAM = C7T8QPEC86;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SpendTracker-Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "This App would like to use your camera to scan recipts.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

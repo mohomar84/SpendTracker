@@ -10,6 +10,7 @@ import SwiftUI
 struct ReceiptScannerView: View {
     var body: some View {
         Text("Hello, Receipt Scanner View!")
+        
     }
 }
 
